@@ -17,7 +17,7 @@ export const createContactSchema = Joi.object({
     'string.base': 'Email should be a string',
     'string.email': 'Email should have at least {#limit} domain segments',
   }),
-  isFavorite: Joi.boolean().default(false).messages({
+  isFavourite: Joi.boolean().default(false).messages({
     'boolean.base': 'Favorite should be a boolean',
   }),
   contactType: Joi.string()
@@ -46,7 +46,7 @@ export const updateContactSchema = Joi.object({
     'string.base': 'Email should be a string',
     'string.email': 'Email should have at least {#limit} domain segments',
   }),
-  isFavorite: Joi.boolean().default(false).messages({
+  isFavourite: Joi.boolean().default(false).messages({
     'boolean.base': 'Favorite should be a boolean',
   }),
   contactType: Joi.string()
